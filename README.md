@@ -1,24 +1,9 @@
-# README
+# Dan's Nineties Bands App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About This App
 
-Things you may want to cover:
+This Rails app is about bans of the 90's. This app is not yet deployed.
 
-* Ruby version
+## Technology
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app was created used Ruby on Rails.
