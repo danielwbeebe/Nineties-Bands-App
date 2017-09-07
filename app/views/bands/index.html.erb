@@ -2,6 +2,13 @@
 
 <div class="good-bands">
   <h2>List of Good Bands Will Go Here</h2>
+
+  <ul>
+  <% @goodbands.each do |goodband| %>
+    <li><%= link_to goodband.name, bands_path(goodband) %></li>
+  <% end %>
+  </ul>
+
 </div>
 
 <div class="bad-bands">
