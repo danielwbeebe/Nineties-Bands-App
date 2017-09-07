@@ -13,6 +13,13 @@
 
 <div class="bad-bands">
   <h2>List of Bad Bands Will Go Here</h2>
+
+  <ul>
+  <% @badbands.each do |badband| %>
+    <li><%= link_to badband.name, bands_path(badband) %></li>
+  <% end %>
+  </ul>
+
 </div>
 
 <%= render 'footer' %>
