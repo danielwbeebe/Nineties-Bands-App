@@ -1,0 +1,2 @@
+class BadBand < ApplicationRecord
+end
