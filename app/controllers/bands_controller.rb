@@ -5,9 +5,4 @@ class BandsController < ApplicationController
     @badbands = BadBand.all
   end
 
-  def show
-    @goodbands = GoodBand.find(params[:id])
-    @badbands = BadBand.find(params[:id])
-  end
-
 end

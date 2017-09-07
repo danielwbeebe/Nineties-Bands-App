@@ -5,7 +5,7 @@
 
   <ul>
   <% @goodbands.each do |goodband| %>
-    <li><%= link_to goodband.name, goodbands_path(goodband) %></li>
+    <li><%= link_to goodband.name, goodband_path(goodband) %></li>
   <% end %>
   </ul>
 
@@ -16,7 +16,7 @@
 
   <ul>
   <% @badbands.each do |badband| %>
-    <li><%= link_to badband.name, badbands_path(badband) %></li>
+    <li><%= link_to badband.name, badband_path(badband) %></li>
   <% end %>
   </ul>
 
