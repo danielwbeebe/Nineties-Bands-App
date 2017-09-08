@@ -14,6 +14,15 @@ class BandsController < ApplicationController
     redirect_to root_path
   end
 
+  def create
+    badband = params['badband']
+    BadBand.create(name: badband['name'],
+                song: badband['song'],
+                album: badband['album'],
+                )
+    redirect_to root_path
+  end
+
   def destroy
     GoodBand.destroy(params['id'])
     redirect_to root_path
@@ -21,7 +30,8 @@ class BandsController < ApplicationController
 
   def update
     goodband = params['goodband']
-    GoodBand.update(name: goodband['name'],
+    GoodBand.update(params[:id],
+                name: goodband['name'],
                 song: goodband['song'],
                 album: goodband['album'],
                 )

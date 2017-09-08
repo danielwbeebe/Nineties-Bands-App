@@ -1,43 +1,71 @@
 <%= render 'header' %>
 
-<div class="good-bands">
-  <h2>List of Good Bands Will Go Here</h2>
+<div class="good">
 
-  <ul>
-  <% @goodbands.each do |goodband| %>
-    <li><%= link_to goodband.name, goodband_path(goodband) %></li>
-  <% end %>
+  <div class="good-bands">
+    <h2>List of Good Bands Will Go Here</h2>
 
-  </ul>
+    <ul>
+    <% @goodbands.each do |goodband| %>
+      <li><%= link_to goodband.name, goodband_path(goodband) %></li>
+
+    <% end %>
+
+    </ul>
+  </div>
+
+  <div class="add-good-band">
+
+    <h2>Add Good Band</h2>
+
+  <%= form_for :goodband, method: 'post', url: {action: 'create'} do |f| %>
+      <%= label(:goodband, :name) %>
+      <%= f.text_field :name %>
+
+      <%= label(:goodband, :song) %>
+      <%= f.text_field :song %>
+
+      <%= label(:goodband, :album) %>
+      <%= f.text_field :album %>
+
+      <%= f.submit %>
+    <% end %>
+
+  </div>
+
 </div>
 
-<div class="add-good-band">
+<div class="bad">
 
-  <h2>Add Good Band</h2>
+  <div class="bad-bands">
+    <h2>List of Bad Bands Will Go Here</h2>
 
-<%= form_for :goodband, method: 'post', url: {action: 'create'} do |f| %>
-    <%= label(:goodband, :name) %>
-    <%= f.text_field :name %>
+    <ul>
+    <% @badbands.each do |badband| %>
+      <li><%= link_to badband.name, badband_path(badband) %></li>
+    <% end %>
+    </ul>
 
-    <%= label(:goodband, :song) %>
-    <%= f.text_field :song %>
+  </div>
 
-    <%= label(:goodband, :album) %>
-    <%= f.text_field :album %>
+  <div class="add-bad-band">
 
-    <%= f.submit %>
-  <% end %>
+    <h2>Add Bad Band</h2>
 
-</div>
+  <%= form_for :badband, method: 'post', url: {action: 'create'} do |f| %>
+      <%= label(:badband, :name) %>
+      <%= f.text_field :name %>
 
-<div class="bad-bands">
-  <h2>List of Bad Bands Will Go Here</h2>
+      <%= label(:badband, :song) %>
+      <%= f.text_field :song %>
 
-  <ul>
-  <% @badbands.each do |badband| %>
-    <li><%= link_to badband.name, badband_path(badband) %></li>
-  <% end %>
-  </ul>
+      <%= label(:badband, :album) %>
+      <%= f.text_field :album %>
+
+      <%= f.submit %>
+    <% end %>
+
+  </div>
 
 </div>
 
