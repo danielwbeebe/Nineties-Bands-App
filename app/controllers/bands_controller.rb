@@ -23,20 +23,4 @@ class BandsController < ApplicationController
     redirect_to root_path
   end
 
-  def destroy
-    GoodBand.destroy(params['id'])
-    redirect_to root_path
-  end
-
-  def update
-    goodband = params['goodband']
-    GoodBand.update(params[:id],
-                name: goodband['name'],
-                song: goodband['song'],
-                album: goodband['album'],
-                )
-
-    redirect_to root_path
-  end
-
 end

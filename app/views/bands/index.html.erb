@@ -8,7 +8,7 @@
     <ul>
     <% @goodbands.each do |goodband| %>
       <li><%= link_to goodband.name, goodband_path(goodband) %></li>
-
+      <l1><%= link_to "Delete Band", goodband_path(goodband), method: 'delete' %></l1>
     <% end %>
 
     </ul>
@@ -43,6 +43,7 @@
     <ul>
     <% @badbands.each do |badband| %>
       <li><%= link_to badband.name, badband_path(badband) %></li>
+      <l1><%= link_to "Delete Band", badband_path(badband), method: 'delete' %></l1>
     <% end %>
     </ul>
 
