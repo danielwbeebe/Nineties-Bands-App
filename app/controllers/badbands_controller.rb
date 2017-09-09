@@ -9,4 +9,13 @@ class BadbandsController < ApplicationController
     redirect_to root_path
   end
 
+  def update
+    badband = params['badband']
+    BadBand.update(params[:id],
+                    song: badband['song'],
+                    album: badband['album'],
+                    )
+    redirect_to root_path
+  end
+
 end

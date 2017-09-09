@@ -5,5 +5,16 @@
   <h2><%= @badbands.album %></h2>
 </div>
 
+<h2>Edit Info</h2>
+
+  <%= form_for :badband, method: 'patch', url: {action: 'update'} do |f| %>
+      <%= label(:badband, :song) %>
+      <%= f.text_field :song %>
+
+      <%= label(:badband, :album) %>
+      <%= f.text_field :album %>
+
+      <%= f.submit "UPDATE BAD BAND" %>
+  <% end %>
 
 <h3><%= link_to "Back", root_path %></h3>
