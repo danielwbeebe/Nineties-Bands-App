@@ -9,4 +9,13 @@ class GoodbandsController < ApplicationController
     redirect_to root_path
   end
 
+  def update
+    goodband = params['goodband']
+    GoodBand.update(params[:id],
+                    song: goodband['song'],
+                    album: goodband['album'],
+                    )
+    redirect_to root_path
+  end
+
 end
