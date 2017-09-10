@@ -3,6 +3,9 @@
 <main>
 <div class="good">
 
+  <div class="good-bands-background">
+  </div>
+
   <div class="good-bands">
     <h2>Good 90's Bands</h2>
 
@@ -10,7 +13,6 @@
       <h3><%= link_to goodband.name, goodband_path(goodband) %></h3>
       <h4><%= link_to "Delete", goodband_path(goodband), method: 'delete' %></h4>
     <% end %>
-
   </div>
 
   <div class="add-good-band">

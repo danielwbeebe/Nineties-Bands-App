@@ -49,6 +49,13 @@ main {
   width: 40vw;
 }
 
+.good-bands-container {
+  overflow: auto;
+  height: 45vh;
+  border: 5px solid #636B46;
+  opacity: 1;
+}
+
 .good-bands {
   overflow: auto;
   height: 45vh;
@@ -81,6 +88,7 @@ main {
 .band-show {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
