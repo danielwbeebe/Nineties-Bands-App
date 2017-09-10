@@ -10,4 +10,4 @@ This Rails app is about bands of the 1990's. Users can view 2 lists, one of "goo
 
 ## Technology
 
-This app was created used Ruby on Rails.
+This app was created using Ruby on Rails.
