@@ -19,6 +19,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0;
 }
 
 .header {
@@ -37,6 +38,24 @@ main {
   flex-direction: row;
   justify-content: space-around;
   font-size: 15px;
+}
+
+.good {
+  margin-top: 5vh;
+  overflow: auto;
+  height: 60vh;
+  border: 5px solid #F9CF00;
+  padding: 5px 5px 5px 5px;
+  width: 40vw;
+}
+
+.bad {
+  margin-top: 5vh;
+  overflow: auto;
+  height: 60vh;
+  border: 5px solid #F9CF00;
+  padding: 5px 5px 5px 5px;
+  width: 40vw;
 }
 
 h1 {

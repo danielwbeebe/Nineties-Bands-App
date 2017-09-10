@@ -4,15 +4,13 @@
 <div class="good">
 
   <div class="good-bands">
-    <h2>List of Good Bands Will Go Here</h2>
+    <h2>Good 90's Bands</h2>
 
-    <ul>
     <% @goodbands.each do |goodband| %>
-      <li><h3><%= link_to goodband.name, goodband_path(goodband) %></h3></li>
-      <l1><h4><%= link_to "Delete Band", goodband_path(goodband), method: 'delete' %></h4></l1>
+      <h3><%= link_to goodband.name, goodband_path(goodband) %></h3>
+      <h4><%= link_to "Delete Band", goodband_path(goodband), method: 'delete' %></h4>
     <% end %>
 
-    </ul>
   </div>
 
   <div class="add-good-band">
@@ -39,14 +37,12 @@
 <div class="bad">
 
   <div class="bad-bands">
-    <h2>List of Bad Bands Will Go Here</h2>
+    <h2>Bad 90's Bands</h2>
 
-    <ul>
     <% @badbands.each do |badband| %>
-      <li><h3><%= link_to badband.name, badband_path(badband) %></h3></li>
-      <l1><h4><%= link_to "Delete Band", badband_path(badband), method: 'delete' %></h4></l1>
+      <h3><%= link_to badband.name, badband_path(badband) %></h3>
+      <h4><%= link_to "Delete Band", badband_path(badband), method: 'delete' %></h4>
     <% end %>
-    </ul>
 
   </div>
 
