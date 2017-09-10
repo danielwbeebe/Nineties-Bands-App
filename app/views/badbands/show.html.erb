@@ -2,14 +2,14 @@
 
 <main>
 
-<div class='band-details'>
-  <h1>Bad Band Details</h1>
-  <h2><%= @badbands.name %></h2>
-  <h2><%= @badbands.song %></h2>
-  <h2><%= @badbands.album %></h2>
-</div>
+<div class='band-show'>
+  <div class='band-details'>
+    <h1>Details About <%= @badbands.name %></h1>
+    <h2>Worst Song: <%= @badbands.song %></h2>
+    <h2>Worst Album: <%= @badbands.album %></h2>
+  </div>
 
-<h2>Edit Info</h2>
+  <h2>Edit Info</h2>
 
   <%= form_for :badband, method: 'patch', url: {action: 'update'} do |f| %>
       <%= label(:badband, :song) %>
@@ -21,7 +21,9 @@
       <%= f.submit "UPDATE" %>
   <% end %>
 
-<h3><%= link_to "Back", root_path %></h3>
+  <h3><%= link_to "Back", root_path %></h3>
+
+</div>
 
 </main>
 

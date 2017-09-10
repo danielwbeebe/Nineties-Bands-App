@@ -17,18 +17,18 @@
 
     <h2>Add Good Band</h2>
 
-  <%= form_for :goodband, method: 'post', url: {action: 'create'} do |f| %>
-      <%= label(:goodband, :name) %>
-      <%= f.text_field :name %>
+    <%= form_for :goodband, method: 'post', url: {action: 'create'} do |f| %>
+        <%= label(:goodband, :name) %>
+        <%= f.text_field :name %>
 
-      <%= label(:goodband, :song) %>
-      <%= f.text_field :song %>
+        <%= label(:goodband, :song) %>
+        <%= f.text_field :song %>
 
-      <%= label(:goodband, :album) %>
-      <%= f.text_field :album %>
+        <%= label(:goodband, :album) %>
+        <%= f.text_field :album %>
 
-      <%= f.submit "SAVE" %>
-  <% end %>
+        <%= f.submit "SAVE" %>
+    <% end %>
 
   </div>
 

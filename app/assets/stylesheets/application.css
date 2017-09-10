@@ -57,6 +57,8 @@ main {
 
 .add-good-band {
   height: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .bad {
@@ -74,6 +76,11 @@ main {
 
 .add-bad-band {
   height: 10vh;
+}
+
+.band-show {
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
