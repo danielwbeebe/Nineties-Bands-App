@@ -1,5 +1,7 @@
 <%= render 'header' %>
 
+<main>
+
 <div class='band-details'>
   <h1>Bad Band Details</h1>
   <h2><%= @badbands.name %></h2>
@@ -20,5 +22,7 @@
   <% end %>
 
 <h3><%= link_to "Back", root_path %></h3>
+
+</main>
 
 <%= render 'footer' %>
