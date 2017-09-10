@@ -44,20 +44,36 @@ main {
 
 .good {
   margin-top: 5vh;
-  overflow: auto;
   height: 60vh;
-  border: 5px solid #636B46;
   padding: 5px 5px 5px 5px;
   width: 40vw;
 }
 
+.good-bands {
+  overflow: auto;
+  height: 45vh;
+  border: 5px solid #636B46;
+}
+
+.add-good-band {
+  height: 10vh;
+}
+
 .bad {
   margin-top: 5vh;
-  overflow: auto;
   height: 60vh;
-  border: 5px solid #636B46;
   padding: 5px 5px 5px 5px;
   width: 40vw;
+}
+
+.bad-bands {
+  overflow: auto;
+  height: 45vh;
+  border: 5px solid #636B46;
+}
+
+.add-bad-band {
+  height: 10vh;
 }
 
 h1 {
@@ -84,4 +100,68 @@ h4 {
   background-color: #373F27;
   color: #E9E7DA;
   font-size: 5vh;
+}
+
+@media (max-width: 800px) {
+
+  .header {
+    min-height: 10vh;
+    font-size: 6vh;
+  }
+
+  main {
+    min-height: 80vh;
+  }
+
+  .good {
+    margin-top: 2vh;
+    height: 50vh;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .good-bands {
+    height: 40vh;
+    border: 2px solid #636B46;
+  }
+
+  .add-good-band {
+    height: 8vh;
+  }
+
+  .bad {
+    margin-top: 2vh;
+    height: 50vh;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .bad-bands {
+    height: 40vh;
+    border: 2px solid #636B46;
+  }
+
+  .add-bad-band {
+    height: 8vh;
+  }
+
+  h1 {
+  font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .footer {
+    min-height: 5vh;
+    font-size: 3vh;
+  }
+
 }

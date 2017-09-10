@@ -8,7 +8,7 @@
 
     <% @goodbands.each do |goodband| %>
       <h3><%= link_to goodband.name, goodband_path(goodband) %></h3>
-      <h4><%= link_to "Delete Band", goodband_path(goodband), method: 'delete' %></h4>
+      <h4><%= link_to "Delete", goodband_path(goodband), method: 'delete' %></h4>
     <% end %>
 
   </div>
@@ -27,7 +27,7 @@
       <%= label(:goodband, :album) %>
       <%= f.text_field :album %>
 
-      <%= f.submit "SAVE GOOD BAND" %>
+      <%= f.submit "SAVE" %>
   <% end %>
 
   </div>
@@ -41,7 +41,7 @@
 
     <% @badbands.each do |badband| %>
       <h3><%= link_to badband.name, badband_path(badband) %></h3>
-      <h4><%= link_to "Delete Band", badband_path(badband), method: 'delete' %></h4>
+      <h4><%= link_to "Delete", badband_path(badband), method: 'delete' %></h4>
     <% end %>
 
   </div>
@@ -60,7 +60,7 @@
       <%= label(:badband, :album) %>
       <%= f.text_field :album %>
 
-      <%= f.submit "SAVE BAD BAND" %>
+      <%= f.submit "SAVE" %>
     <% end %>
 
   </div>
